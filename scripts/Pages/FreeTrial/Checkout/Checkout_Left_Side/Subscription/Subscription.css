@@ -1,0 +1,79 @@
+.subscrip_btns a {
+    height: 60px;
+    width: 49%;
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #7AD8E7;
+    text-transform: uppercase;
+    border: 1px solid #7AD8E7;
+    background: #fff;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 70px;
+    padding-top: 8px;
+}
+.free_trial {
+    background: #7AD8E7 !important;
+    color: #fff !important;
+}
+.free_trial:hover {
+opacity: .8;
+}
+.edit_subs {
+    margin-right: auto;
+}
+.free_trial {
+    margin-left: auto;
+}
+.subscrip_btns a:hover {
+    background: #7AD8E7;
+    color: #fff;
+}
+.subscrip_btns {
+    display: flex;
+}
+.subscrip_para p {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    color: #666666;
+    margin: 0;
+}
+.subscrip_para p span {
+    color: #4285F4;
+    font-weight: 600;
+}
+.subscrip_para {
+    padding: 12px 16px;
+    background: #FFFFFF;
+    border: 1px solid #B2BCCA;
+    border-radius: 4px;
+    margin-top: 16px;
+    text-align:center;
+}
+
+@media screen and (max-width:576px) {
+    .subscrip_btns a {
+        height: 45px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .subscrip_btns a:nth-child(1) {
+        margin-bottom: 8px;
+    }
+    .subscrip_btns a:nth-child(2) {
+        margin-top: 8px;
+    }
+    .subscrip_btns {
+        flex-wrap: wrap;
+    }    
+}

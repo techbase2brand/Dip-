@@ -1,0 +1,323 @@
+.progressBar_section {
+    width: 100%;
+}
+
+.progressBar_section .progress_data {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.progressBar_section .progress_data a {
+    z-index: 2;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.progressBar_section .progress_data a svg {
+    position: relative;
+    z-index: 5;
+}
+
+.progressBar_section .type_icon:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background: #B2BCCA;
+    left: -24px;
+    top: 24px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.progressBar_section .delivery_icon:before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 3px;
+    z-index: -1;
+    background: #B2BCCA;
+    top: 24px;
+    left: 208px;
+    transition: 1s;
+}
+
+.progressBar_section .summery_icon:before {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 3px;
+    z-index: -1;
+    background: #B2BCCA;
+    top: 24px;
+    left: 380px;
+    transition: 1s;    
+}
+.progressBar_section .bundle_icon:before {
+    content: "";
+    position: absolute;
+    width: 116px;
+    height: 3px;
+    z-index: -1;
+    background: #B2BCCA;
+    top: 24px;
+    left: 47px;
+    transition: 1s;
+}
+
+.progressBar_section .progress_data h3 {
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B2BCCA;
+    margin: 0;
+    margin-top: 16px;
+}
+
+
+
+.progressBar_section .progress_fill {
+    fill: #7AD8E7;
+}
+
+.progressBar_section .type_icon_1 h3,
+.progressBar_section .bundle_icon_1 h3,
+.progressBar_section .delivery_icon_1 h3,
+.progressBar_section .summery_icon_1 h3 {
+    color: #7AD8E7;
+}
+
+.progressBar_section .summery_icon_1:before,
+.progressBar_section .bundle_icon_1:before,
+.progressBar_section .delivery_icon_1:before,
+.progressBar_section .type_icon_1:before { 
+    background: #7AD8E7;
+}
+
+@media screen and (max-width:1024px) {
+    .progressBar_section .summery_icon:before {
+        content: "";
+        position: absolute;
+        width: 28%;
+        height: 3px;
+        z-index: -1;
+        top: 28%;
+        left: 65.9%;
+    }
+    .progressBar_section .delivery_icon:before {
+        content: "";
+        position: absolute;
+        width: 27%;
+        height: 3px;
+        z-index: -1;
+        top: 28%;
+        left: 34.9%;
+    }
+
+    .progressBar_section .bundle_icon:before {
+        content: "";
+        position: absolute;
+        width: 26%;
+        height: 3px;
+        z-index: -1;
+        top: 28%;
+        left: 4.9%;
+    }
+
+    .progressBar_section .type_icon:before {
+        content: "";
+        position: absolute;
+        width: 3%;
+        height: 3px;
+        left: -2.5%;
+        top: 28%;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .progressBar_section .delivery_icon:before {
+        content: "";
+        position: absolute;
+        width: 24%;
+        height: 3px;
+        z-index: -1;
+        top: 28%;
+        left: 35.5%;
+    }
+
+    .progressBar_section .bundle_icon:before {
+        content: "";
+        position: absolute;
+        width: 22%;
+        height: 3px;
+        z-index: -1;
+        top: 28%;
+        left: 7%;
+    }
+
+    .progressBar_section .type_icon:before {
+        content: "";
+        position: absolute;
+        width: 4%;
+        height: 3px;
+        left: -3.5%;
+        top: 28%;
+        z-index: -1;
+    }
+
+    .delivery_icon:before {
+        content: "";
+        position: absolute;
+        width: 38%;
+        height: 3px;
+        top: 28%;
+        left: 7.4%;
+    }
+    .summery_icon:before {
+        content: "";
+        position: absolute;
+        width: 40%;
+        height: 3px;
+        top: 28%;
+        left: 51.5%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .progressBar_section .summery_icon:before {
+        width: 25%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 65.9%;
+    }
+    .progressBar_section .delivery_icon:before {
+        width: 24%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 35.5%;
+    }
+
+    .progressBar_section .bundle_icon:before {
+        width: 22%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 6.8%;
+    }
+
+    .progressBar_section .type_icon:before {
+        content: "";
+        position: absolute;
+        width: 4%;
+        height: 3px;
+        left: -3.2%;
+        top: 35%;
+        z-index: -1;
+    }
+    .progressBar_section .progress_data h3 {
+        font-size: 12px;
+        line-height: 16px;
+        color: #B2BCCA;
+        margin: 0;
+        margin-top: 4px;
+    }
+
+    .progress_data a svg {
+        width: 35px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    
+    .progressBar_section .bundle_icon:before {
+        width: 18%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 9.2%;
+    }
+    .progressBar_section .summery_icon:before {
+        width: 23%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 64.9%;
+    }
+    .progressBar_section .type_icon:before {
+        width: 5%;
+        height: 3px;
+        left: -4.5%;
+        top: 35%;
+        z-index: -1;
+    }
+    
+}
+
+@media screen and (max-width:375px) {
+    .progressBar_section .type_icon:before {
+        width: 6%;
+        height: 3px;
+        left: -5%;
+        top: 35%;
+        z-index: -1;
+    }
+    .progressBar_section .bundle_icon:before {
+        width: 16%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 10.5%;
+    }
+    .progressBar_section .delivery_icon:before {
+        width: 19%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 36%;
+    }
+    .progressBar_section .summery_icon:before {
+        width: 21%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 64.9%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .progressBar_section .type_icon:before {
+        width: 6%;
+        height: 3px;
+        left: -6%;
+        top: 35%;
+        z-index: -1;
+    }
+    .progressBar_section .bundle_icon:before {
+        width: 12%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 13%;
+    }
+    .progressBar_section .delivery_icon:before {
+        width: 15%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 37%;
+    }
+    .progressBar_section .summery_icon:before {
+        width: 18%;
+        height: 3px;
+        z-index: -1;
+        top: 35%;
+        left: 64.9%;
+    }
+}

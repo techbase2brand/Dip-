@@ -1,0 +1,12 @@
+.product_large_image {
+    padding: 4rem 0;
+}
+.product_large_image img {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .product_large_image {
+        padding: 2rem 0;
+    }
+}

@@ -1,0 +1,41 @@
+.alert_section .text_item_1 {
+    /* width: 60%; */
+    text-align: right;
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.alert_section .text_item_2 {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+.alert_section .alert_data {
+    padding: 16px 0;
+    position: relative;
+}
+.alert_section {
+    background: #7AD8E7;
+}
+.alert_section .text_item_2 img {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+}
+
+@media screen and (max-width:576px) {
+}
+
+@media screen and (max-width:428px) {
+    .alert_section .text_item_1 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

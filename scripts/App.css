@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-Condensed.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-Condensed.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-Book.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-Bold.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-CondensedExtraBold.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-CondensedExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-CondensedBold.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-CondensedBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-ExtraBold.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-CondensedLight.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-CondensedLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-Heavy.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura LT';
+    src: url('./Pages/Fonts/FuturaLT-Light.woff2') format('woff2'),
+        url('./Pages/Fonts/FuturaLT-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+
+
+/* Nexa Font */
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/NexaBold.woff2') format('woff2'),
+        url('./Pages/Fonts/NexaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Heavy.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Bold.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Black.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/NexaLight.woff2') format('woff2'),
+        url('./Pages/Fonts/NexaLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Book.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-XBold.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Thin.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Light.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('./Pages/Fonts/Nexa-Regular.woff2') format('woff2'),
+        url('./Pages/Fonts/Nexa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* Ambroise font */
+@font-face {
+    font-family: 'Ambroise Demi';
+    src: url('./Pages/Fonts/AmbroiseFirmin-Demi.woff2') format('woff2'),
+        url('./Pages/Fonts/AmbroiseFirmin-Demi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container_div {
+    max-width: 1250px;
+    width: 100%;
+    margin: auto;
+    padding: 0 16px;
+}

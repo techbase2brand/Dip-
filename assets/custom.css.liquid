@@ -1,0 +1,122 @@
+/*-----------------------------------------------------------------------------/
+/ Custom Theme CSS
+/-----------------------------------------------------------------------------*/
+/*---------------- Global Custom CSS -------------------*/
+
+{{settings.global_css }}
+
+
+
+
+
+
+
+
+@font-face{
+font-family:"nexa-light";
+src:url(nexa-light.otf) format("opentype");
+}
+
+
+@font-face{
+font-family:"nexa-bold";
+src:url(nexa-bold.otf) format("opentype");
+}
+
+
+
+@font-face{
+font-family:"Ambroise-Regular";
+src:url(Ambroise_Regular.otf) format("opentype");
+}
+
+
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+
+
+
+@media (max-width:400px){
+
+#nt_cart_canvas, #nt_login_canvas, #nt_menu_canvas, #nt_search_canvas {
+    width: 300px !important;
+}
+
+}
+
+
+/*---------------- Custom CSS for only desktop -------------------*/
+@media (min-width: 1025px) {
+  {{settings.desktop_css }}
+  
+
+}
+
+
+@media  (max-width:950px){
+
+.is-size li {
+    width: 90% !important;
+    margin-right: 15px!important;
+    padding: 15px 20px!important;
+}
+.is-scent li {
+    width: 42% !important;
+    margin-right: 18px!important;
+    padding: 15px 20px!important;
+}
+.is-size ul.swatches-select.swatch__list_pr li:nth-last-child(1) {
+    width: 90% !important;
+    margin-top: 20px!important;
+    font-size: 14px;
+}
+products/laundry-detergent-strips?variant=42486277046484button.single_add_to_cart_button {
+    width: 56% !important;
+    margin-top: 0;
+}
+
+}
+
+
+
+/*---------------- Custom CSS for tablet, mobile -------------------*/
+@media (max-width: 1024px) {
+  {{settings.tablet_mobile_css }}
+  
+}
+
+
+
+
+/*---------------- Custom CSS for only tablet -------------------*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  {{settings.tablet_css }}
+  
+  
+  
+}
+
+
+
+
+/*---------------- Custom CSS for only mobile -------------------*/
+@media (max-width: 767px){
+  {{settings.mobile_css }}
+
+  div#nt_select_ppr_0 li {
+    width: 44%;
+    margin-right: 4px!important;
+    padding: 15px 20px!important;
+}
+
+}
+
+
+
+/***************************************************/
+
+  
+

@@ -1,0 +1,22 @@
+.review_heading p {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #4F4F4F;
+    white-space: nowrap;
+    margin: 0 16px;
+    width: auto;
+}
+.review_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+.review_heading .hori_line {
+    width: 100%;
+    height: 1px;
+    background: #4F4F4F;
+}

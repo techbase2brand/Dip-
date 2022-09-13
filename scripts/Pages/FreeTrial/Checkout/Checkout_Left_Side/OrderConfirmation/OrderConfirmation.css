@@ -1,0 +1,294 @@
+.product_desc h5 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: #232323;
+    margin: 0;
+}
+
+.product_desc h4 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #7AD8E7;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.desc_icons {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666666;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4px;
+}
+.desc_icons svg {
+    margin-right: 4px;
+    min-width: 20px;
+}
+
+.summery_heading h4 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #232323;
+    margin: 0;
+}
+.summery_heading {
+    position: relative;
+}
+.summery_heading:before {
+    content: "";
+    position: absolute;
+    background-image: url(../../../../Images/Dip-number_4.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -45px;
+    top: -9px;
+}
+.summery_heading p {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.summery_data {
+    padding: 2rem 0;
+}
+.product_image {
+    border: 1px solid #B2BCCA;
+    filter: drop-shadow(0px 2px 40px rgba(133, 133, 133, 0.08));
+    border-radius: 3px;
+    margin-right: 42px;
+}
+.product_data {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #B2BCCA;
+}
+.product_prices_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+.product_prices_2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_prices_1 h5 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #4F4F4F;
+    margin: 0;
+}
+.product_prices_2 h4 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+    margin: 0;
+}
+
+.product_prices_data {
+    padding: 16px 0;
+    border-bottom: 1px solid #B2BCCA;
+}
+.shipping_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #B2BCCA;
+}
+
+.shipping_img {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+.shipping_img svg {
+    margin-right: 12px;
+}
+
+.shipping_data h5 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7AD8E7;
+    margin: 0;
+}
+
+.total_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.total_price h2 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #232323;
+    margin: 0;
+}
+
+.confirmation_order_desc {
+    padding: 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 14%);
+    border-radius: 4px;
+}
+
+@media screen and (max-width:576px) {
+    .summery_heading h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .summery_heading p {
+        font-size: 12px;
+        line-height: 16px;
+        padding-bottom: 12px;
+    }
+    .summery_heading:before {
+        width: 30px;
+        height: 30px;
+        left: -32px;
+        top: -5px;
+    } 
+
+    .confirmation_order_desc {
+        padding: 1rem;
+    }
+    .product_desc h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product_desc h4 {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 0;
+    }
+    
+    .desc_icons {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product_image {
+        margin-right: 24px;
+    }
+
+    .product_prices_1 h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product_prices_2 h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product_prices_1 {
+        padding-bottom: 4px;
+    }
+    .shipping_img {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .shipping_data h5 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .total_price h2 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .product_data {
+        padding-bottom: 12px;
+    }
+    .product_prices_data {
+        padding: 12px 0;
+    }
+    .shipping_data {
+        padding: 12px 0;
+    }
+    .total_price {
+        padding-top: 12px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .product_desc h5 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .desc_icons {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .product_desc h4 {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 4px 0;
+    }
+    .product_prices_1 h5 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .product_prices_2 h4 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .shipping_img {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .shipping_data h5 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .total_price h2 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .product_image {
+        margin-right: 12px;
+    }
+    .product_image img {
+        max-width: 100px;
+        width: 100%;
+    }
+}

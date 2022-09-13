@@ -1,0 +1,357 @@
+.coffee_section .coffee_heading h4 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #232323;
+    margin: 0;
+}
+
+.coffee_section .coffee_heading p {
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    margin: 0;
+}
+
+.coffee_section .product_price h5 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #B2BCCA;
+    margin: 0;
+
+}
+
+.coffee_section .product_price h6 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+    padding-left: 16px;
+    margin: 0;
+}
+
+.coffee_section .product_price {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.coffee_section .product_price p {
+    font-family: "Nexa Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #C52222;
+    max-width: 71px;
+    width: 100%;
+    height: 17px;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: -8px;
+    left: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffee_section .smallest_image span {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 12px;
+    color: #232323;
+    background: #7AD8E7;
+    padding: 6px 4px 2px;
+    width: max-content;
+}
+
+.coffee_section .smallest_image h4 {
+    font-family: 'Nexa Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 12px;
+}
+
+.coffee_section .desc_data_2 {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.coffee_section .quantity_sector button {
+    font-size: 20px !important;
+    width: 29px;
+    height: 29px;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #B2BCCA;
+    background-color: transparent;
+    filter: drop-shadow(0px 2px 40px rgba(133, 133, 133, 0.08));
+    border-radius: 3px;
+    padding: 0 0 4px;
+    transition: 0.3s;
+}
+
+.coffee_desc.mystyle_1 .quantity_sector button:hover {
+    background: #7AD8E7;
+    color: #fff;
+    border: 1px solid #7AD8E7;
+}
+
+.coffee_section .quantity_sector .minus {
+    opacity: 0.3;
+}
+
+.coffee_desc.mystyle_1 .quantity_sector .minus {
+    opacity: 1;
+}
+
+.coffee_desc.mystyle_1 .quantity_sector button {
+    border: 1px solid #000;
+}
+
+.coffee_section .quantity_sector button:focus-visible {
+    outline: none;
+}
+
+.coffee_section .quantity::-webkit-inner-spin-button {
+    display: none;
+}
+
+.coffee_section .quantity {
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    width: 28px;
+    margin: 0 0 0 12px;
+    background: transparent;
+}
+
+.coffee_section .quantity:focus-visible {
+    outline: none;
+}
+
+.coffee_section .desc_image img {
+    max-width: 85px;
+    height: 85px;
+}
+
+.coffee_section .desc_image {
+    background: #fff;
+    border-radius: 3px;
+    width: 20%;
+    /* height: 90px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgb(35 35 35 / 8%);
+}
+
+.coffee_section .coffee_heading {
+    display: flex;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.coffee_section .coffee_heading:before {
+    content: "";
+    position: absolute;
+    background-image: url(../../../../Images/Dip-number_2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    left: -45px;
+    top: -10px;
+}
+
+.coffee_section .desc_data {
+    display: flex;
+    width: 80%;
+}
+
+.coffee_section .coffee_desc {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #B2BCCA;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.coffee_section .desc_data_1 {
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.coffee_section .smallest_image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+.coffee_section .coffee_data {
+    padding: 20px 0 20px;
+    border-top: 1px solid #B2BCCA;
+}
+
+.coffee_section .coffee_desc.mystyle_1 {
+    border: 1px solid #7AD8E7;
+    background: #E4F7FA;
+}
+
+@media screen and (max-width:576px) {
+    .coffee_section .product_price h5 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .coffee_section .product_price {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-width: unset;
+        width: 50%;
+    }
+
+    .coffee_section .product_price p {
+        margin: 0;
+        position: absolute;
+        top: -8px;
+        left: unset;
+        right: 0;
+    }
+
+    .coffee_section .smallest_image h4 {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 4px;
+    }
+
+    .coffee_section  .smallest_image {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: unset;
+        padding: 0;
+        width: 50%;
+    }
+
+    .coffee_section .quantity {
+        font-size: 16px;
+        line-height: 20px;
+        border: none;
+        width: 28px;
+        margin: 0 0 0 12px;
+    }
+
+    .coffee_section .coffee_heading h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .coffee_section .coffee_heading {
+        padding-bottom: 12px;
+    }
+
+    .coffee_section .coffee_data {
+        padding: 2rem 0 20px;
+    }
+
+    .coffee_section .coffee_heading:before {
+        width: 30px;
+        height: 30px;
+        left: -31px;
+        top: -5px;
+    }
+
+    .coffee_section .desc_data_1 {
+        padding: 0;
+        width: 100%;
+    }
+
+    .coffee_section .desc_image {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .coffee_section .desc_data {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 12px;
+        flex-direction: column;
+    }
+
+    .coffee_section .desc_data_2 {
+        padding-left: 0px;
+        padding-top: 8px;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .coffee_section .coffee_desc {
+        flex-wrap: wrap;
+    }
+
+    .coffee_section .desc_image img {
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .coffee_section .quantity_sector button {
+        width: 20px;
+        height: 20px;
+        font-size: 16px !important;
+        line-height: 20px;
+        padding: 0;
+    }
+
+    .coffee_section .smallest_image span {
+        padding-right: 1rem;
+    }
+
+    .coffee_section .product_price h6 {
+        font-size: 12px;
+        line-height: 16px;
+        padding-left: 12px;
+    }
+}
+
+@media screen and (max-width:428px) {
+    
+}
+
+@media screen and (max-width:375px) {
+}

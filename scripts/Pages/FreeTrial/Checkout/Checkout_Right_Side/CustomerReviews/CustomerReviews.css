@@ -1,0 +1,86 @@
+.profile_1{
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.profile_data_1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+.profile_image {
+    width: 15%;
+    margin-right: 20px;
+}
+.profile_image img {
+    width: 100%;
+}
+.profile_data {
+    width: 85%;
+}
+.profile_data_1 p {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #4F4F4F;
+    margin: 0;
+}
+.stars img {
+    padding-right: 1.5rem;
+}
+.profile_data_2 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #3DBF22;
+    display: flex;
+    align-items: center;
+}
+.profile_data_2 svg {
+    margin-right: 8px;
+}
+.profile_large_text {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    margin: 0;
+}
+.review_profile {
+    padding-bottom: 38px;
+}
+
+@media screen and (max-width: 576px) {
+    .profile_data_1 {
+        flex-wrap: wrap;
+    }
+    .profile_data_1 p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .profile_large_text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .profile_image {
+        width: 20%;
+        margin-right: 16px;
+    }
+    .profile_data {
+        width: 80%;
+    }
+    .stars img {
+        padding-right: 1rem;
+    }
+    .review_profile {
+        padding-bottom: 32px;
+    }
+}

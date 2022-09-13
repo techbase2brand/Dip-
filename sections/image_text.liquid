@@ -1,0 +1,403 @@
+{%- liquid
+  assign sid = section.id
+  assign se_stts = section.settings
+  assign img_ratio = se_stts.image_ratio 
+  assign ck = false 
+ if img_ratio == 'auto' 
+  assign ck = true 
+ endif
+ assign image = se_stts.image
+ assign url = se_stts.button_link 
+ if se_stts.cl_txt == 'dark' 
+  assign cl_txt = 'cd,cg' 
+   elsif se_stts.cl_txt == 'primary' 
+  assign cl_txt = 'ss-blue' 
+ else 
+  assign cl_txt = 'cw,cw,button-o-w' 
+ endif 
+ assign cl_arr = cl_txt | split:","
+ assign fs_arr = se_stts.text_size2 | split:"," -%}
+
+{%- capture image_layout -%}
+<div class="col-12 col-lg-6 col-md-7">
+  <div class="nt_img_txt oh pr middle center">
+    {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
+    {%- if image != blank -%}
+        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+    	
+     {% else %}
+        <video muted="" autoplay="" playsinline="" loop="" style="width: 100%;">
+              <source src="{{ se_stts.video }}" type="video/mp4">
+		</video>   
+    {%- endif -%}
+    {%- comment -%}</a>{%- endcomment -%}
+  </div>
+</div>
+{%- endcapture -%}
+
+<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}} ss-image_text">
+  <div class="row no-gutters equal_nt {{img_ratio}} al_center row-ss" style="justify-content: space-between;">
+    {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
+    <div class="col-12 col-lg-4 col-md-5 txt_col_img" style="background-color:{{section.settings.bg-color}};">
+      <div class="flex column pl__20 pr__20 pb__20 pt__20 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}}">
+<div class="stars-review-ss">
+ <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+</svg>
+</div>
+          <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
+          {{se_stts.text}}
+          {%- if url != blank and se_stts.button_label -%}<p class="mg__0 shop-now-ss"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}} <svg width="45" height="17" viewBox="0 0 50 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M49 8.5L1 8.5M49 8.5L41.9863 16M49 8.5L41.9863 1" stroke="#232323" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a></p>
+                <a class="insta-ss" target="_blank" href="https://www.instagram.com/wearedip.co/"><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.916 7.553C9.06445 7.553 7.55341 9.06403 7.55341 10.9156C7.55341 12.7672 9.06445 14.2783 10.916 14.2783C12.7676 14.2783 14.2787 12.7672 14.2787 10.9156C14.2787 9.06403 12.7676 7.553 10.916 7.553ZM21.0014 10.9156C21.0014 9.52315 21.014 8.14328 20.9358 6.75333C20.8576 5.13886 20.4893 3.70603 19.3087 2.52545C18.1256 1.34235 16.6953 0.97657 15.0809 0.898369C13.6884 0.820169 12.3085 0.832782 10.9186 0.832782C9.52608 0.832782 8.14622 0.820169 6.75626 0.898369C5.1418 0.97657 3.70896 1.34487 2.52838 2.52545C1.34528 3.70855 0.9795 5.13886 0.901299 6.75333C0.823098 8.14581 0.835711 9.52567 0.835711 10.9156C0.835711 12.3056 0.823098 13.688 0.901299 15.0779C0.9795 16.6924 1.3478 18.1252 2.52838 19.3058C3.71148 20.4889 5.1418 20.8547 6.75626 20.9329C8.14874 21.0111 9.5286 20.9985 10.9186 20.9985C12.311 20.9985 13.6909 21.0111 15.0809 20.9329C16.6953 20.8547 18.1282 20.4864 19.3087 19.3058C20.4918 18.1227 20.8576 16.6924 20.9358 15.0779C21.0165 13.688 21.0014 12.3081 21.0014 10.9156V10.9156ZM10.916 16.0895C8.05288 16.0895 5.74218 13.7788 5.74218 10.9156C5.74218 8.05247 8.05288 5.74177 10.916 5.74177C13.7792 5.74177 16.0899 8.05247 16.0899 10.9156C16.0899 13.7788 13.7792 16.0895 10.916 16.0895ZM16.3018 6.73819C15.6333 6.73819 15.0935 6.19836 15.0935 5.52987C15.0935 4.86138 15.6333 4.32154 16.3018 4.32154C16.9703 4.32154 17.5101 4.86138 17.5101 5.52987C17.5103 5.6886 17.4792 5.84582 17.4186 5.99251C17.3579 6.1392 17.2689 6.27248 17.1567 6.38473C17.0444 6.49697 16.9111 6.58597 16.7644 6.64662C16.6178 6.70728 16.4605 6.73839 16.3018 6.73819V6.73819Z" fill="#D6AC95"/>
+</svg>
+           @wearedip.co
+</a>{%- endif -%}
+        
+
+        
+      </div>
+    </div>
+    <style>.nt_se_{{sid}} .txt_col_img p {font-size: {{fs_arr[1]}}px}
+      
+      .nt_se_{{sid}}{
+          background: {{ section.settings.fullbgcolor }};
+      }
+    </style>
+    {%- if se_stts.img_position == '2' -%}{{- image_layout -}}{%- endif -%}
+  </div>
+</div>
+
+{%- render 'section_css' -%}
+
+{%- schema -%}
+  {
+    "name": "Image with text",
+    "class": "nt_section type_image_text",
+    "settings": [
+      {
+        "type": "header",
+        "content": "== image Settings"
+      },
+      {
+         "type": "color",
+         "id": "fullbgcolor",
+         "label": "Section Background color"
+       },
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+       },
+       {
+         "type": "url",
+         "id": "video",
+         "label": "Video URL"
+       },
+       {
+         "type": "color",
+         "id": "bg-color",
+         "label": "Text section Background color"
+       },
+      {
+        "type": "select",
+        "id": "img_align",
+        "default": "center",
+        "options": [
+         {
+            "value": "top",
+            "label": "Top"
+         },
+         {
+            "value": "center",
+            "label": "Middle"
+         },
+         {
+            "value": "bottom",
+            "label": "Bottom"
+         }
+        ],
+        "label": "Image alignment",
+        "info":"Not active when enable Adapt to image"
+      },
+      {
+       "type": "select",
+       "id": "img_position",
+       "options": [
+        {
+           "value": "1",
+           "label": "Left"
+         },
+         {
+           "value": "2",
+           "label": "Right"
+         }
+       ],
+       "label": "Image position",
+       "default": "1"
+      },
+      {
+        "type": "select",
+        "id": "image_ratio",
+        "label": "Aspect Ratio",
+        "default": "auto",
+        "info": "Aspect Ratio Custom will settings in General panel.",
+        "options": [
+          {
+            "group": "Auto",
+            "value": "auto",
+            "label": "Adapt to image"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio2_1",
+            "label": "2:1"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio16_9",
+            "label": "16:9"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio8_5",
+            "label": "8:5"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio3_2",
+            "label": "3:2"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio4_3",
+            "label": "4:3"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio_nt",
+            "label": "Ratio ASOS"
+          },
+          {
+            "group": "Squared",
+            "value": "ratio1_1",
+            "label": "1:1"
+          },
+          {
+            "group": "Portrait",
+            "value": "ratio2_3",
+            "label": "2:3"
+          },
+          {
+            "group": "Portrait",
+            "value": "ratio1_2",
+            "label": "1:2"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus1",
+            "label": "Ratio Custom 1"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus2",
+            "label": "Ratio Custom 2"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus3",
+            "label": "Ratio Custom 3"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus4",
+            "label": "Ratio Custom 4"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "== Text Settings"
+      },
+      {
+        "type": "select",
+        "id": "text_size2",
+        "label": "Text size",
+        "default": "30,14",
+        "options": [
+          {
+            "value": "24,12",
+            "label": "Small"
+          },
+          {
+            "value": "30,14",
+            "label": "Medium"
+          },
+          {
+            "value": "40,16",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "Shop Now"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link (Optional)"
+      },
+      {
+        "type": "select",
+        "id": "open_link",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Current window (_self)"
+          },
+         {
+            "value": "_blank",
+            "label": "New window (_blank)"
+          }
+        ],
+        "label": "Open link in",
+        "default": "_blank"
+      },
+      {
+       "type": "select",
+       "id": "txt_align",
+       "options": [
+        {
+           "value": "tl",
+           "label": "Left"
+         },
+         {
+           "value": "tc",
+           "label": "Center"
+         },
+         {
+           "value": "tr",
+           "label": "Right"
+         }
+       ],
+       "label": "Text alignment",
+       "default": "tc"
+      },
+      {
+        "type": "header",
+        "content": "== Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_shadow",
+        "label": "Use text shadow?",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "cl_txt",
+        "options": [
+         {
+            "value": "dark",
+            "label": "Dark"
+         },
+         {
+            "value": "light",
+            "label": "Light"
+          },
+         {
+            "value": "primary",
+            "label": "Primary"
+          }
+        ],
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "options": [
+         {
+            "value": "container",
+            "label": "Container"
+         },
+         {
+            "value": "nt_full",
+            "label": "Full Width"
+          }
+        ],
+        "label": "Layout"
+      },
+      {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": "50px,,50px,",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "placeholder": "50px,,50px,"
+      },
+     {
+        "type": "header",
+        "content": "== Design Mobile Options"
+      },
+      {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd_mb",
+        "label": "Padding",
+        "placeholder": "50px,,50px,"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text",
+        "category": "III. Image"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,23 @@
+.brand_logo {
+    display: flex;
+    padding: 12px 0;
+    width: max-content;
+}
+.navbar_section {
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgb(0 0 0 / 6%);
+}
+
+@media screen and (max-width:768px) {
+    .navbar_section .brand_logo img {
+        max-width: 55px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navbar_section .brand_logo img {
+        max-width: 45px;
+        width: 100%;
+    }
+}

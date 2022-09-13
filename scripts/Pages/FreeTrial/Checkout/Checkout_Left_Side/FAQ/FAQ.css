@@ -1,0 +1,176 @@
+.faq_section .faq_btn-1{
+    width: 40%;
+}
+.faq_section .faq_btn-2{
+    width: 30%;
+    padding: 0 12px;
+}
+.faq_section .faq_btn-3{
+    width: 30%;
+}
+.faq_section .faq_butons {
+    display: flex;
+    padding-bottom: 16px;
+}
+.faq_section .faq_butons button {
+    font-family: "Nexa";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #878787;
+    background: #fff;
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 28px;
+    height: 45px;
+    padding-top: 6px;
+}
+
+.faq_section .faq_heading h4 {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #232323;
+    margin: 0;
+    padding-bottom: 16px;
+}
+.faq_section .faq_data {
+    padding: 24px;
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 4px;
+}
+
+.faq_section .faq_accordion button.accordion-button.collapsed {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+    border: none;
+    padding: 16px 12px;
+}
+.faq_section .accordion-body {
+    font-family: 'Futura LT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666666;
+    opacity: 0.7;
+    padding: 16px 12px;
+}
+
+.faq_section .faq_accordion .accordion-item {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.faq_section .faq_accordion .accordion-button:not(.collapsed) {
+    font-family: 'Nexa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+    background: unset;
+    padding: 16px 12px;
+}
+.faq_section .faq_accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq_section .faq_accordion .accordion-button::after {
+    background-image: url(../../../../Images/accordion_arrow.svg);
+    background-size: 16px;
+    transform: translateY(4px);
+}
+
+.faq_section .faq_accordion .accordion-button:not(.collapsed)::after {
+    background-image: url(../../../../Images/accordion_arrow.svg);
+    background-size: 16px;
+    transform: rotate(-180deg) translate(4px, 4px);
+}
+
+.faq_section .faq_butons .active{
+    background: #7AD8E7;
+    color: #fff;
+    border: 1px solid #7AD8E7;
+}
+
+@media screen and (max-width:1250px) {
+    .faq_section .faq_data {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .faq_section .faq_data {
+        padding: 16px;
+    }
+    .faq_section .faq_butons {
+        flex-wrap: wrap;
+    }
+    .faq_section .faq_btn-1 {
+        width: 100%;
+    }
+    .faq_section .faq_btn-2 {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .faq_section .faq_btn-3 {
+        width: 100%;
+    }
+    .faq_section .faq_butons button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .faq_section .faq_heading h4 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .faq_section .faq_accordion button.accordion-button.collapsed {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px;
+    }
+    .faq_section .faq_accordion .accordion-button:not(.collapsed) {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px;
+    }
+    .faq_section .accordion-body {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .faq_section .faq_accordion button.accordion-button.collapsed {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 12px 0;
+    }
+    .faq_section .accordion-body {
+        font-size: 12px;
+        line-height: 16px;
+        color: #666666;
+        padding: 12px 0px;
+    }
+    .faq_section .faq_accordion .accordion-button:not(.collapsed) {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 12px 0;
+    }
+}
+
+
