@@ -83,7 +83,7 @@ const Coffee = (props) => {
             // setType(props.checkout.option)
         })
 
-        
+
 
         // if(Object.keys(props.bundles).length > 0){
         //     setBundle(props.bundles[type])
@@ -112,13 +112,14 @@ const Coffee = (props) => {
                     <div className="desc_data">
                         <div className="desc_data_1">
                             <div className='smallest_image'>
-                                <span>Only $16per wash - Save ${(data.compare/100) - (data.price/100)}</span>
+                                <span>Only £16per wash - Save £{(data.compare/100) - (data.price/100)}</span>
                                 <h4>{data.title}</h4>
                             </div>
                             <div className="product_price">
                                 {/* <p>Best Seller</p> */}
-                                <h5><del>${data.compare/100}</del></h5>
-                                <h6>${data.price/100}</h6>
+                                {/* <h5><del>£{data.price/100}</del></h5> */}
+                                <h6>£{data.compare/100}</h6>
+
                             </div>
                         </div>
 

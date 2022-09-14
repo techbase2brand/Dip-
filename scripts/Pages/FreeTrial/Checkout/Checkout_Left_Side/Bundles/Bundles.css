@@ -83,7 +83,7 @@
 }
 
 .coffee_section .smallest_image h4 {
-    font-family: 'Nexa Bold';
+    font-family: 'Nexa';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -350,7 +350,7 @@
 }
 
 @media screen and (max-width:428px) {
-    
+
 }
 
 @media screen and (max-width:375px) {

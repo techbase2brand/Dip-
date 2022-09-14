@@ -7,7 +7,7 @@ const ChooseType = (props) => {
 
     useEffect(() => {
         $(function ready() {
-            $('.product_large_image_2').hide();
+
             $('.desc_image_2').hide();
             $(window).on('load', function () {
                 $('.product_image_1').addClass('active_product');
@@ -18,7 +18,8 @@ const ChooseType = (props) => {
                 $('.product_large_image_2').hide();
                 $('.product_image_2').removeClass('active_product');
                 $('.desc_image_1').show();
-                props.update("option","Fresh Linen")
+                props.update("option","Fresh Linen");
+                props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/1_900x.jpg?v=1652788650");
             })
 
             $('.product_image_2').off('click').on('click', function () {
@@ -28,7 +29,8 @@ const ChooseType = (props) => {
                 $('.product_image_1').removeClass('active_product');
                 // $('.desc_image_2').show();
                 $('.desc_image_1').show();
-                props.update("option","Fragrance Free")
+                props.update("option","Fragrance Free");
+                props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/2_900x.jpg?v=1652788652");
             })
         })
     }, [props])
@@ -45,7 +47,7 @@ const ChooseType = (props) => {
                         <img src={index == 0 ? props.product_1 : props.product_2} alt="" />
                         <p>{data}</p>
                     </div>
-                )) : ""}   
+                )) : ""}
                 </div>
             </div>
         </section>

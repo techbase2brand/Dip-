@@ -14,7 +14,7 @@ const OrderConfirmation = (props) => {
                 <div className="confirmation_order_desc">
                     <div className="product_data">
                         <div className="product_image">
-                            <img src={props.product_image} alt="" />
+                            <img src={props.checkout.image} alt="" />
                         </div>
                         <div className="product_desc">
                             <h5>{props.checkout.title}</h5>
@@ -94,7 +94,7 @@ const OrderConfirmation = (props) => {
                             </svg>
                             Shipping
                         </div>
-                        <h5>FREE SHIPPING</h5>
+                        <h5>2-3 Days</h5>
                     </div>
 
                     <div className="total_price">

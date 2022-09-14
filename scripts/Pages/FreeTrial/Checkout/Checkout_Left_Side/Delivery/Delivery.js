@@ -93,7 +93,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 5 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -104,7 +104,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 6 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -115,7 +115,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 7 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -126,7 +126,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 8 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -137,7 +137,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 9 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -148,7 +148,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 10 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -159,7 +159,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 11 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>
@@ -170,7 +170,7 @@ const Delivery = () => {
                         </div>
 
                         <div className="slider_data_2">
-                            <div className="slider_data_1" data-name={"Every 4 Month"}>
+                            <div className="slider_data_1" data-name={"Every 12 Month"}>
                                 <div className="slider_image">
                                     <img src={month_1} alt="" />
                                 </div>

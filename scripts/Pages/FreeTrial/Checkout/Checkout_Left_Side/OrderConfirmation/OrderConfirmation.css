@@ -1,3 +1,7 @@
+.product_large_image_2 {
+    display: none;
+}
+
 .product_desc h5 {
     font-family: 'Nexa';
     font-style: normal;
@@ -173,6 +177,10 @@
     box-shadow: 0px 2px 12px rgb(0 0 0 / 14%);
     border-radius: 4px;
 }
+.product_image img {
+    max-width: 152px;
+    width: 100%;
+}
 
 @media screen and (max-width:576px) {
     .summery_heading h4 {
@@ -189,7 +197,7 @@
         height: 30px;
         left: -32px;
         top: -5px;
-    } 
+    }
 
     .confirmation_order_desc {
         padding: 1rem;
@@ -203,7 +211,7 @@
         line-height: 18px;
         padding: 8px 0;
     }
-    
+
     .desc_icons {
         font-size: 14px;
         line-height: 18px;

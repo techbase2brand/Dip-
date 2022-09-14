@@ -2,7 +2,7 @@ import React from 'react';
 import './Subscription.css'
 
 const Subscription = (props) => {
-    
+
     function getFreeTrial()
     {
         // alert(window.Shopify.routes.root);
@@ -10,10 +10,18 @@ const Subscription = (props) => {
         let index = document.querySelector(".mystyle").parentElement.parentElement.parentElement.dataset.index
         let planId = ""
 
-        if(index == 0) planId = 4683825394
-        if(index == 1) planId = 4683858162
-        if(index == 2) planId = 4683890930
-        if(index == 3) planId = 4683923698 
+        if(index == 0) planId = 2615279828
+        if(index == 1) planId = 2615312596
+        if(index == 2) planId = 2615345364
+        if(index == 3) planId = 2615378132
+        if(index == 4) planId = 2615410900
+        if(index == 5) planId = 2615443668
+        if(index == 6) planId = 2615476436
+        if(index == 7) planId = 2615509204
+        if(index == 8) planId = 2615541972
+        if(index == 9) planId = 2615574740
+        if(index == 10) planId = 2615607508
+        if(index == 11) planId = 2615640276
 
         let formData = {
             'items': [{
@@ -34,7 +42,7 @@ const Subscription = (props) => {
            })
            .then(data=> {
             console.log(data)
-            window.location.href="/cart"
+            window.location.href="/checkout"
            })
            .catch((error) => {
              console.error('Error:', error);

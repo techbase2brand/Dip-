@@ -28,6 +28,7 @@ const Checkout = () => {
         option:"Fresh Linen",
         bundle:null,
         frequency:"Every Month",
+        image:"https://cdn.shopify.com/s/files/1/0631/6123/7716/products/1_900x.jpg?v=1652788650",
     })
 
     const updateCheckout = useCallback(
@@ -46,7 +47,7 @@ const Checkout = () => {
 
     useEffect(() => {
         if(!load){
-            fetch('/products/laundry-detergent-strips.js', {
+            fetch('/products/copy-of-laundry-detergent-strips.js', {
                 method: 'GET'
             })
             .then(response => {
@@ -98,7 +99,7 @@ const Checkout = () => {
         setLoad(true)
     } , [load,bundles,type,checkout])
 
-    const [frequency , setFrequency] = useState(["Every Month","Every 2 Month","Every 3 Month","Every 4 Month"])
+    const [frequency , setFrequency] = useState(["Every Month","Every 2 Month","Every 3 Month","Every 4 Month","Every 5 Month","Every 6 Month","Every 7 Month","Every 8 Month","Every 9 Month","Every 10 Month","Every 11 Month","Every 12 Month"])
 
     return (
         <section className='checkout_section'>
