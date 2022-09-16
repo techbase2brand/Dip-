@@ -204,6 +204,7 @@
     border-radius: 4px;
     padding: 12px;
     margin-bottom: 12px;
+    gap: 1rem;
 }
 
 .coffee_section .desc_data_1 {
@@ -217,7 +218,6 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
-    align-items: center;
 }
 
 .coffee_section .coffee_data {
@@ -326,8 +326,8 @@
     }
 
     .coffee_section .desc_image img {
-        max-width: 80px;
-        height: 80px;
+        max-width: 200px;
+        height: 200px;
     }
 
     .coffee_section .quantity_sector button {

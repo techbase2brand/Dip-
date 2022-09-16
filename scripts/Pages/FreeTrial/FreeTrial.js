@@ -11,12 +11,26 @@ import crossIcon from '../Images/X_alert.svg';
 import brand_logo from '../Images/dip-brand-logo.svg';
 // import Tabs from './Checkout/FAQ/Tabs/Tabs';
 
+
+fetch('https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/42872568840404', {
+  method: 'GET',
+})
+  .then((response) => response.json())
+  .then((data) => {
+    console.log('Success:', data);
+    var s = data.message.inventory_levels[1].available;
+    document.getElementById("stock-price-ss").innerHTML = s;
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
 const FreeTrial = () => {
   return (
     <div className='free_trial_page'>
         <Alert crossIcon={crossIcon}/>
         <Navbar brand_logo={brand_logo}/>
-        <FreeTrialAvailable timerHeading='FREE TRIAL IS STILL AVAILABLE' leftStock='X' days='05' hours='08' minutes='40' seconds='09' />
+        <FreeTrialAvailable timerHeading='FREE TRIAL IS STILL AVAILABLE' leftStock='' days='05' hours='08' minutes='40' seconds='09' />
         <Checkout />
         <Footer />
         {/* <Tabs /> */}

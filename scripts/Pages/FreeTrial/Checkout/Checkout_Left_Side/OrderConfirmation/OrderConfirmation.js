@@ -76,11 +76,12 @@ const OrderConfirmation = (props) => {
                     <div className="product_prices_data">
                         <div className="product_prices_1">
                             <h5>{props.checkout.option} - 1x</h5>
-                            <h5>£{props.checkout.price/100}</h5>
+                            <h5 id='update-price-ss'>£9.8</h5>
+                            {/* £{props.checkout.price/100} */}
                         </div>
 
                         <div className="product_prices_2">
-                            <h4>Free Trial Pack - 3 of Each</h4>
+                            <h4>Free Trial Pack - 8 washes</h4>
                             <h4>£0</h4>
                         </div>
                     </div>
@@ -94,7 +95,7 @@ const OrderConfirmation = (props) => {
                             </svg>
                             Shipping
                         </div>
-                        <h5>2-3 Days</h5>
+                        <h5>2-5 Days</h5>
                     </div>
 
                     <div className="total_price">

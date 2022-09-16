@@ -14,7 +14,7 @@ import "../../../../../../node_modules/slick-carousel/slick/slick-theme.css";
 
 const Delivery = () => {
 
-    
+
     const slider1 = {
         dots: true,
         arrows: false,
@@ -27,7 +27,7 @@ const Delivery = () => {
             {
                 breakpoint: 577,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: false,
                     dots: true,
