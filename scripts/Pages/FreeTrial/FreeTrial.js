@@ -12,7 +12,7 @@ import brand_logo from '../Images/dip-brand-logo.svg';
 // import Tabs from './Checkout/FAQ/Tabs/Tabs';
 
 
-fetch('https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/42872568840404', {
+fetch('https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/42872568709332', {
   method: 'GET',
 })
   .then((response) => response.json())

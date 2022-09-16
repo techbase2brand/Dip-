@@ -74,30 +74,24 @@ const Coffee = (props) => {
                 let a = $('.mystyle_1 #eee-price').text();
                 $('#update-price-ss').text(a);
 
-            //     var user	=	$('.mystyle_1').attr('data-id');
+                var user = $('.mystyle_1').attr('data-id');
 
-            //     console.log(user)
+                console.log(user)
 
-            //      setTimeout(()=>{
+                fetch(`https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/${user}`, {
+                method: 'GET',
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log('Success:', data);
 
-            //     fetch(`https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/${user}`, {
-            //     method: 'GET',
-            //     })
-            //     .then((response) => response.json())
-            //     .then((data) => {
-            //         console.log('Success:', data);
-            //         setTimeout(()=>{
-            //         var s = data.message.inventory_levels[1].available;
-            //         console.log(s)
-            //         document.getElementById("stock-price-ss").innerHTML = s;
-            //         },5000)
-            //     })
-            //     .catch((error) => {
-            //         console.error('Error:', error);
-            //     });
+                    var ab = data.message.inventory_levels[1].available;
+                    document.getElementById("stock-price-ss").innerHTML = ab;
 
-            // },3000)
-
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
 
             })
 
