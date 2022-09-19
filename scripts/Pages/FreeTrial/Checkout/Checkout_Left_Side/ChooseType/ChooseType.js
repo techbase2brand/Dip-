@@ -19,7 +19,7 @@ const ChooseType = (props) => {
                 $('.product_image_2').removeClass('active_product');
                 $('.desc_image_1').show();
                 props.update("option","Fresh Linen");
-                props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/1_900x.jpg?v=1652788650");
+                props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/1_180x.jpg?v=1652788650");
             })
 
             $('.product_image_2').off('click').on('click', function () {
@@ -30,7 +30,7 @@ const ChooseType = (props) => {
                 // $('.desc_image_2').show();
                 $('.desc_image_1').show();
                 props.update("option","Fragrance Free");
-                props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/2_900x.jpg?v=1652788652");
+                props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/2_180x.jpg?v=1652788652");
             })
         })
     }, [props])

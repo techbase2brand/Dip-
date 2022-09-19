@@ -363,6 +363,14 @@
 
 /*****  30 LOADS  *****/
 
+.coffee_desc[data-id="42872568709332"] .per-wash-ss:after{
+    content: "£0.33";
+}
+
+.coffee_desc[data-id="42872568709332"] .per-wash-diff-ss:after{
+    content: "£4.20";
+}
+
 .coffee_desc[data-id="42872568709332"] h5:after {
     content: "£14.00";
     text-decoration: line-through;
@@ -373,6 +381,14 @@
     text-decoration: line-through;
 }
 
+.coffee_desc[data-id="42872568873172"] .per-wash-ss:after{
+    content: "£0.33";
+}
+
+.coffee_desc[data-id="42872568873172"] .per-wash-diff-ss:after{
+    content: "£4.20";
+}
+
 
 /*****  60 LOADS  *****/
 
@@ -381,11 +397,27 @@
     text-decoration: line-through;
 }
 
+.coffee_desc[data-id="42872568676564"] .per-wash-ss:after{
+    content: "£0.31";
+}
+
+.coffee_desc[data-id="42872568676564"] .per-wash-diff-ss:after{
+    content: "£7.98";
+}
+
+
 .coffee_desc[data-id="42872568840404"] h5:after {
     content: "£26.60";
     text-decoration: line-through;
 }
 
+.coffee_desc[data-id="42872568840404"] .per-wash-ss:after{
+    content: "£0.31";
+}
+
+.coffee_desc[data-id="42872568840404"] .per-wash-diff-ss:after{
+    content: "£7.98";
+}
 
 /*****  90 LOADS  *****/
 
@@ -394,9 +426,26 @@
     text-decoration: line-through;
 }
 
+.coffee_desc[data-id="42872568643796"] .per-wash-ss:after{
+    content: "£0.27";
+}
+
+.coffee_desc[data-id="42872568643796"] .per-wash-diff-ss:after{
+    content: "£10.71";
+}
+
+
 .coffee_desc[data-id="42872568807636"] h5:after {
     content: "£35.70";
     text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568807636"] .per-wash-ss:after{
+    content: "£0.27";
+}
+
+.coffee_desc[data-id="42872568807636"] .per-wash-diff-ss:after{
+    content: "£10.71";
 }
 
 
@@ -407,21 +456,56 @@
     text-decoration: line-through;
 }
 
+.coffee_desc[data-id="42872568611028"] .per-wash-ss:after{
+    content: "£0.24";
+}
+
+.coffee_desc[data-id="42872568611028"] .per-wash-diff-ss:after{
+    content: "£12.6";
+}
+
+
+
 .coffee_desc[data-id="42872568774868"] h5:after {
     content: "£42.00";
     text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568774868"] .per-wash-ss:after{
+    content: "£0.24";
+}
+
+.coffee_desc[data-id="42872568774868"] .per-wash-diff-ss:after{
+    content: "£12.6";
 }
 
 
 /*****  300 LOADS  *****/
 
 .coffee_desc[data-id="42872568742100"] h5:after {
-    content: "£91.00    ";
+    content: "£91.00";
     text-decoration: line-through;
 }
+
+.coffee_desc[data-id="42872568742100"] .per-wash-ss:after{
+    content: "£0.21";
+}
+
+.coffee_desc[data-id="42872568742100"] .per-wash-diff-ss:after{
+    content: "£27.3";
+}
+
 
 .coffee_desc[data-id="42872568905940"] h5:after {
     content: "£91.00    ";
     text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568905940"] .per-wash-ss:after{
+    content: "£0.21";
+}
+
+.coffee_desc[data-id="42872568905940"] .per-wash-diff-ss:after{
+    content: "£27.3";
 }
 

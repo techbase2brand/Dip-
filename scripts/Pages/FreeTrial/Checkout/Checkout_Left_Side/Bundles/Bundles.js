@@ -90,14 +90,14 @@ const Coffee = (props) => {
                     if( ab > 0 ){
                         $('.in-stock-ss').show();
                         $('.out-of-stock-ss ').hide();
-                        document.getElementById("stock-price-ss").innerHTML = ab; 
-                        $('.free_trial').text('Get my free trial');   
+                        document.getElementById("stock-price-ss").innerHTML = ab;
+                        $('.free_trial').text('Get my free trial');
                     }
-                    
+
                     else{
                         $('.out-of-stock-ss ').show();
                         $('.in-stock-ss').hide();
-                        $('.free_trial').text('Out of Stock');                      
+                        $('.free_trial').text('Out of Stock');
                     }
 
                 })
@@ -149,7 +149,7 @@ const Coffee = (props) => {
                     <div className="desc_data">
                         <div className="desc_data_1">
                             <div className='smallest_image'>
-                                <span>Only £16per wash - Save £{(data.compare/100) - (data.price/100)}</span>
+                                <span>Only <span className='per-wash-ss'></span>per wash - Save <span className='per-wash-diff-ss'></span></span>
                                 <h4>{data.title}</h4>
                             </div>
                             <div className="product_price">

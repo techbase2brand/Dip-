@@ -14,8 +14,8 @@ import ChooseType from './Checkout_Left_Side/ChooseType/ChooseType';
 
 // images
 import product_image from '../../Images/Dip-product_image.svg'
-import product_1 from '../../Images/Dip-product-1.svg';
-import product_2 from '../../Images/Dip-product-2.svg';
+// import product_1 from '../../Images/b-11.png';
+// import product_2 from '../../Images/b-12.png';
 
 const Checkout = () => {
 
@@ -107,7 +107,7 @@ const Checkout = () => {
                 <div className="checkout_left_section">
                     <div className="checkout_left_section_1">
                         <ProgressBar checkout={checkout} update={updateCheckout} />
-                        <ChooseType choose_heading='Choose Your Type' product_1={product_1} product_2={product_2} type={type} update={updateCheckout} />
+                        <ChooseType choose_heading='Choose Your Type' product_1={"https://cdn.shopify.com/s/files/1/0631/6123/7716/files/b-1_2.png?v=1647348132"} product_2={"https://cdn.shopify.com/s/files/1/0631/6123/7716/files/b-1_1.png?v=1647348149"} type={type} update={updateCheckout} />
                         <Bundles bundles={bundles} checkout={checkout} update={updateCheckout} />
                         <Delivery frequency={frequency} update={updateCheckout} />
                         <OrderConfirmation product_image={product_image} heading1='Home Compostable' heading2='Coffee Pods' product_price='£52.80' checkout={checkout} update={updateCheckout} />
