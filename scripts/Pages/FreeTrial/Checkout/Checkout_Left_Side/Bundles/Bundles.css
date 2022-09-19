@@ -355,3 +355,73 @@
 
 @media screen and (max-width:375px) {
 }
+
+
+
+
+
+
+/*****  30 LOADS  *****/
+
+.coffee_desc[data-id="42872568709332"] h5:after {
+    content: "£14.00";
+    text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568873172"] h5:after {
+    content: "£14.00";
+    text-decoration: line-through;
+}
+
+
+/*****  60 LOADS  *****/
+
+.coffee_desc[data-id="42872568676564"] h5:after {
+    content: "£26.60";
+    text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568840404"] h5:after {
+    content: "£26.60";
+    text-decoration: line-through;
+}
+
+
+/*****  90 LOADS  *****/
+
+.coffee_desc[data-id="42872568643796"] h5:after {
+    content: "£35.70";
+    text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568807636"] h5:after {
+    content: "£35.70";
+    text-decoration: line-through;
+}
+
+
+/*****  120 LOADS  *****/
+
+.coffee_desc[data-id="42872568611028"] h5:after {
+    content: "£42.00";
+    text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568774868"] h5:after {
+    content: "£42.00";
+    text-decoration: line-through;
+}
+
+
+/*****  300 LOADS  *****/
+
+.coffee_desc[data-id="42872568742100"] h5:after {
+    content: "£91.00    ";
+    text-decoration: line-through;
+}
+
+.coffee_desc[data-id="42872568905940"] h5:after {
+    content: "£91.00    ";
+    text-decoration: line-through;
+}
+

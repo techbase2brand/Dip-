@@ -86,7 +86,19 @@ const Coffee = (props) => {
                     console.log('Success:', data);
 
                     var ab = data.message.inventory_levels[1].available;
-                    document.getElementById("stock-price-ss").innerHTML = ab;
+
+                    if( ab > 0 ){
+                        $('.in-stock-ss').show();
+                        $('.out-of-stock-ss ').hide();
+                        document.getElementById("stock-price-ss").innerHTML = ab; 
+                        $('.free_trial').text('Get my free trial');   
+                    }
+                    
+                    else{
+                        $('.out-of-stock-ss ').show();
+                        $('.in-stock-ss').hide();
+                        $('.free_trial').text('Out of Stock');                      
+                    }
 
                 })
                 .catch((error) => {
@@ -142,7 +154,7 @@ const Coffee = (props) => {
                             </div>
                             <div className="product_price">
                                 {/* <p>Best Seller</p> */}
-                                {/* <h5><del>£{data.price/100}</del></h5> */}
+                                <h5><del></del></h5>
                                 <h6 id="eee-price">£{data.compare/100}</h6>
 
                             </div>

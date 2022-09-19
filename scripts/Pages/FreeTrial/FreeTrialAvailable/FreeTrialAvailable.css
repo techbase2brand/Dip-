@@ -10,6 +10,10 @@
     padding-bottom: 22px;
 }
 
+.out-of-stock-ss{
+    display: none;
+}
+
 .timer_section .time_data p {
     font-family: 'Nexa';
     font-style: normal;
@@ -21,7 +25,7 @@
     padding-bottom: 30px;
 }
 
-.timer_section .time_data p h6 {
+.timer_section .time_data p span {
     font-family: 'Nexa';
     font-style: normal;
     font-weight: 700;
@@ -283,7 +287,7 @@ li span {
         padding-bottom: 22px;
     }
 
-    .timer_section .time_data p h6 {
+    .timer_section .time_data p span {
         font-size: 16px;
         line-height: 28px;
         padding: 2px 8px;
@@ -319,7 +323,7 @@ li span {
         padding-bottom: 12px;
     }
 
-    .timer_section .time_data p h6 {
+    .timer_section .time_data p span {
         font-size: 12px;
         line-height: 16px;
         padding: 4px 4px;

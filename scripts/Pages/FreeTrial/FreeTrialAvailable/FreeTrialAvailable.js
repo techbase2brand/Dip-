@@ -54,8 +54,12 @@ const FreeTrialAvailable = (props) => {
             <div className="container_div">
                 <div className="time_data">
                     <h3>{props.timerHeading}</h3>
-                    <p className='d-flex align-items-center justify-content-center'>Only<h6 id='stock-price-ss'>{props.leftStock}</h6>left in stock, offer ends in</p>
-
+                    <div className='in-stock-ss'>
+                    <p className='d-flex align-items-center justify-content-center'>Only<span id='stock-price-ss'>{props.leftStock}</span>left in stock, offer ends in</p>
+                    </div>
+                    <div className='out-of-stock-ss'>
+                    <p>Out of Stock</p>
+                    </div>
                     {/* <div className="counter_timer">
                         <div className="time_Items">
                             <h1>{props.days}</h1>
