@@ -17,8 +17,8 @@ const OrderConfirmation = (props) => {
                             <img src={props.checkout.image} alt="" />
                         </div>
                         <div className="product_desc">
-                            <h5>{props.checkout.title}</h5>
-                            <h5>{props.checkout.option}</h5>
+                            <h5 className='summary-variant-title'>Fresh Linen / 30 loads</h5>
+                            {/* <h5>{props.checkout.option}</h5> */}
                             <h4>£{props.checkout.price/100}</h4>
                             <div className='desc_icons'>
                                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">

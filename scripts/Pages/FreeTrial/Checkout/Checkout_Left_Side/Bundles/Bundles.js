@@ -74,6 +74,10 @@ const Coffee = (props) => {
                 let a = $('.mystyle_1 #eee-price').text();
                 $('#update-price-ss').text(a);
 
+                let title = $('.mystyle_1 .variant-title-ss').text();
+
+                $('.summary-variant-title').text(title);
+
                 var user = $('.mystyle_1').attr('data-id');
 
                 console.log(user)
@@ -149,8 +153,8 @@ const Coffee = (props) => {
                     <div className="desc_data">
                         <div className="desc_data_1">
                             <div className='smallest_image'>
-                                <span>Only <span className='per-wash-ss'></span>per wash - Save <span className='per-wash-diff-ss'></span></span>
-                                <h4>{data.title}</h4>
+                                <span>Only <span className='per-wash-ss p-0'></span> per wash - Save <span className='per-wash-diff-ss p-0'></span></span>
+                                <h4 className='variant-title-ss'>{data.title}</h4>
                             </div>
                             <div className="product_price">
                                 {/* <p>Best Seller</p> */}
