@@ -8,7 +8,7 @@ const OrderConfirmation = (props) => {
             <div className="summery_data progressBar_fill">
                 <div className="summery_heading">
                     <h4>Order Confirmation</h4>
-                    <p>Based on your preferneces, we think this looks good!</p>
+                    <p>Based on your preferences, we think this looks good!</p>
                 </div>
 
                 <div className="confirmation_order_desc">
@@ -19,8 +19,8 @@ const OrderConfirmation = (props) => {
                         <div className="product_desc">
                             <h5 className='summary-variant-title'>Fresh Linen / 30 loads</h5>
                             {/* <h5>{props.checkout.option}</h5> */}
-                            <h4>£{props.checkout.price/100}</h4>
-                            <div className='desc_icons'>
+                            {/* <h4>£{props.checkout.price/100}</h4> */}
+                            <div className='desc_icons pt-2'>
                                 <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="13" height="14" rx="1" fill="#BBE2EA" />
                                     <rect x="2" width="9" height="11" fill="#F9F9F9" />
@@ -75,13 +75,13 @@ const OrderConfirmation = (props) => {
 
                     <div className="product_prices_data">
                         <div className="product_prices_1">
-                            <h5>{props.checkout.option} - 1x</h5>
+                            <h5 className='summary-variant-title'>Fresh Linen / 30 loads</h5>
                             <h5 id='update-price-ss'>£9.8</h5>
                             {/* £{props.checkout.price/100} */}
                         </div>
 
                         <div className="product_prices_2">
-                            <h4>Free Trial Pack - 8 washes</h4>
+                            <h4>{props.checkout.title}</h4>
                             <h4>£0</h4>
                         </div>
                     </div>

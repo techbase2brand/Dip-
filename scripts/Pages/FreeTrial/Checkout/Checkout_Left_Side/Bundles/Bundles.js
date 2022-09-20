@@ -71,6 +71,10 @@ const Coffee = (props) => {
                 $(this).addClass('mystyle_1');
                 props.update("bundle",$(this).attr("data-id"))
                 props.update("price",$(this).attr("data-price"))
+
+                let src = $('.mystyle_1 img').attr('src');
+                $('.product_image img').attr('src',src);
+
                 let a = $('.mystyle_1 #eee-price').text();
                 $('#update-price-ss').text(a);
 
@@ -92,14 +96,17 @@ const Coffee = (props) => {
                     var ab = data.message.inventory_levels[1].available;
 
                     if( ab > 0 ){
+
                         $('.in-stock-ss').show();
-                        $('.out-of-stock-ss ').hide();
+                        $('.time_data h3').text("FREE TRIAL IS STILL AVAILABLE");
                         document.getElementById("stock-price-ss").innerHTML = ab;
                         $('.free_trial').text('Get my free trial');
                     }
 
                     else{
-                        $('.out-of-stock-ss ').show();
+
+                        $('.time_data h3').text("OUT OF STOCK");
+                        // $('.out-of-stock-ss ').show();
                         $('.in-stock-ss').hide();
                         $('.free_trial').text('Out of Stock');
                     }
@@ -113,8 +120,13 @@ const Coffee = (props) => {
 
 
             $(window).on('load', function () {
+
+                setTimeout(()=>{
+                    $(".coffee_desc.onload").addClass('mystyle_1');
+                },3000)
+
+
                 // console.log("bundle on load")
-                $(".coffee_desc.onload").addClass('mystyle_1');
                 // props.update("bundle",$(".coffee_desc.onload").attr("data-id"))
                 // props.update("price",$(".coffee_desc.onload").attr("data-price"))
             });

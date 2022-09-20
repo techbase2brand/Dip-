@@ -91,8 +91,8 @@
 .product_prices_1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-bottom: 8px;
+    gap: 10px;
 }
 .product_prices_2{
     display: flex;
@@ -106,7 +106,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
     align-items: center;
     color: #4F4F4F;
     margin: 0;
