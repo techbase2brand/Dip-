@@ -82,41 +82,70 @@ const Coffee = (props) => {
 
                 $('.summary-variant-title').text(title);
 
-                var user = $('.mystyle_1').attr('data-id');
-
-                console.log(user)
-
-                fetch(`https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/${user}`, {
-                method: 'GET',
-                })
-                .then((response) => response.json())
-                .then((data) => {
-                    console.log('Success:', data);
-
-                    var ab = data.message.inventory_levels[1].available;
-
-                    if( ab > 0 ){
-
-                        $('.in-stock-ss').show();
-                        $('.time_data h3').text("FREE TRIAL IS STILL AVAILABLE");
-                        document.getElementById("stock-price-ss").innerHTML = ab;
-                        $('.free_trial').text('Get my free trial');
-                    }
-
-                    else{
-
-                        $('.time_data h3').text("OUT OF STOCK");
-                        // $('.out-of-stock-ss ').show();
-                        $('.in-stock-ss').hide();
-                        $('.free_trial').text('Out of Stock');
-                    }
-
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                });
 
             })
+
+
+            $(".coffee_desc[data-id='42872568709332'] h4").text('Fresh Linen / 30 loads');
+            $(".coffee_desc[data-id='42872568709332']").on('click', function () {
+                $(".summary-variant-title").text('Fresh Linen / 30 loads');
+            })
+
+
+            $(".coffee_desc[data-id='42872568676564'] h4").text('Fresh Linen / 60 loads - Save 5%');
+            $(".coffee_desc[data-id='42872568676564']").on('click', function () {
+                $(".summary-variant-title").text('Fresh Linen / 60 loads - Save 5%');
+            })
+
+
+            $(".coffee_desc[data-id='42872568643796'] h4").text('Fresh Linen / 90 loads - Save 15%');
+            $(".coffee_desc[data-id='42872568643796']").on('click', function () {
+                $(".summary-variant-title").text('Fresh Linen / 90 loads - Save 15%');
+            })
+
+
+            $(".coffee_desc[data-id='42872568611028'] h4").text('Fresh Linen / 120 loads - Save 25%');
+            $(".coffee_desc[data-id='42872568611028']").on('click', function () {
+                $(".summary-variant-title").text('Fresh Linen / 120 loads - Save 25%');
+            })
+
+
+            $(".coffee_desc[data-id='42872568742100'] h4").text("Fresh Linen / Extra 35% OFF 300 Loads. This Year's Laundry ✅");
+            $(".coffee_desc[data-id='42872568742100']").on('click', function () {
+                $(".summary-variant-title").text("Fresh Linen / Extra 35% OFF 300 Loads. This Year's Laundry ✅");
+            })
+
+
+            $(".coffee_desc[data-id='42872568873172'] h4").text("Fragrance Free / 30 loads");
+            $(".coffee_desc[data-id='42872568873172']").on('click', function () {
+                $(".summary-variant-title").text("Fragrance Free / 30 loads");
+            })
+
+
+            $(".coffee_desc[data-id='42872568840404'] h4").text('Fragrance Free / 60 loads - Save 5%');
+            $(".coffee_desc[data-id='42872568840404']").on('click', function () {
+                $(".summary-variant-title").text('Fragrance Free / 60 loads - Save 5%');
+            })
+
+
+            $(".coffee_desc[data-id='42872568807636'] h4").text('Fragrance Free / 90 loads - Save 15%');
+            $(".coffee_desc[data-id='42872568807636']").on('click', function () {
+                $(".summary-variant-title").text('Fragrance Free / 90 loads - Save 15%');
+            })
+
+
+            $(".coffee_desc[data-id='42872568774868'] h4").text('Fragrance Free / 120 loads - Save 25%');
+            $(".coffee_desc[data-id='42872568774868']").on('click', function () {
+                $(".summary-variant-title").text('Fresh Linen / 120 loads - Save 25%');
+            })
+
+
+            $(".coffee_desc[data-id='42872568905940'] h4").text("Fragrance Free / Extra 35% OFF 300 Loads. This Year's Laundry ✅");
+            $(".coffee_desc[data-id='42872568905940']").on('click', function () {
+                $(".summary-variant-title").text("Fragrance Free / Extra 35% OFF 300 Loads. This Year's Laundry ✅");
+            })
+
+
 
 
             $(window).on('load', function () {

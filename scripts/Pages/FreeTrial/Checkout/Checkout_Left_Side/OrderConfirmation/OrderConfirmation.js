@@ -93,9 +93,9 @@ const OrderConfirmation = (props) => {
                                 <path d="M22.3495 18.5814C23.7367 18.5814 24.8611 17.4569 24.8611 16.0697C24.8611 14.6826 23.7367 13.5581 22.3495 13.5581C20.9624 13.5581 19.8379 14.6826 19.8379 16.0697C19.8379 17.4569 20.9624 18.5814 22.3495 18.5814Z" stroke="#7AD8E7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M4.76744 16.0698H2.25581V11.0465M1 1H17.9535V16.0698M9.7907 16.0698H19.8372M24.8605 16.0698H28V8.53488M28 8.53488H17.9535M28 8.53488L24.2326 2.25581H17.9535M2.25581 6.02326H7.27907" stroke="#7AD8E7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            Shipping
+                            Shipping | 2-5 Day
                         </div>
-                        <h5>2-5 Days</h5>
+                        <h5>£1</h5>
                     </div>
 
                     <div className="total_price">

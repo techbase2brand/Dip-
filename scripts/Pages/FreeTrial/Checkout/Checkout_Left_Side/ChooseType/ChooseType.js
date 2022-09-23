@@ -20,6 +20,38 @@ const ChooseType = (props) => {
                 $('.desc_image_1').show();
                 props.update("option","Fresh Linen");
                 props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/1_180x.jpg?v=1652788650");
+
+
+                fetch("https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/42872568709332", {
+                    method: 'GET',
+                    })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log('Success:', data);
+
+                        var ab = data.message.inventory_levels[1].available;
+
+                        if( ab > 0 ){
+
+                            $('.in-stock-ss').show();
+                            $('.time_data h3').text("FREE TRIAL IS STILL AVAILABLE");
+                            document.getElementById("stock-price-ss").innerHTML = ab;
+                            $('.free_trial').text('Get my free trial');
+                        }
+
+                        else{
+
+                            $('.time_data h3').text("OUT OF STOCK");
+                            // $('.out-of-stock-ss ').show();
+                            $('.in-stock-ss').hide();
+                            $('.free_trial').text('Out of Stock');
+                        }
+
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+
             })
 
             $('.product_image_2').off('click').on('click', function () {
@@ -31,6 +63,37 @@ const ChooseType = (props) => {
                 $('.desc_image_1').show();
                 props.update("option","Fragrance Free");
                 props.update("image","https://cdn.shopify.com/s/files/1/0631/6123/7716/products/2_180x.jpg?v=1652788652");
+
+                fetch("https://checkout.wearedip.co.uk/api/get/inventory/7646761877716/42872568873172", {
+                    method: 'GET',
+                    })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log('Success:', data);
+
+                        var ab = data.message.inventory_levels[1].available;
+
+                        if( ab > 0 ){
+
+                            $('.in-stock-ss').show();
+                            $('.time_data h3').text("FREE TRIAL IS STILL AVAILABLE");
+                            document.getElementById("stock-price-ss").innerHTML = ab;
+                            $('.free_trial').text('Get my free trial');
+                        }
+
+                        else{
+
+                            $('.time_data h3').text("OUT OF STOCK");
+                            // $('.out-of-stock-ss ').show();
+                            $('.in-stock-ss').hide();
+                            $('.free_trial').text('Out of Stock');
+                        }
+
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    });
+
             })
         })
     }, [props])
