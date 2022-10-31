@@ -1,3 +1,99 @@
+.spinner-ss {
+    position: relative;
+    z-index: 9;
+    background-color: #7AD8E7 !important;
+}
+#loading {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+
+.checkbox-ss {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-ss input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .checkbox-ss label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .checkbox-ss input:checked+label:before {
+    background: black;
+  }
+  .checkbox-ss label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow: 0 1px 2px #0000000d, inset 0 -15px 10px -12px #0000000d;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: -3px;
+  }
+  
+  .email-ss {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: none;
+  }
+  
+  .email-ss input:focus-visible {
+    outline: none;
+}
+
+.checkbox-ss label{
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;    
+}
+
+.email-ss input {
+    padding: 5px 15px;
+    width: 100%;
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
+    border: 1px solid;
+}
+
+  .checkbox-ss input:checked+label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+
 .subscrip_btns a {
     height: 60px;
     width: 49%;
@@ -21,6 +117,7 @@
 .free_trial {
     background: #7AD8E7 !important;
     color: #fff !important;
+    cursor: pointer;
 }
 .free_trial:hover {
 opacity: .8;

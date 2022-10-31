@@ -150,6 +150,25 @@ const Coffee = (props) => {
 
             $(window).on('load', function () {
 
+                fetch('/cart/clear.js', {
+                    method: 'POST'
+                  })
+                  .then(response => {
+                    return response.json();
+                  })
+                  .catch((error) => {
+                    console.error('Error:', error);
+                  });
+
+                  window.addEventListener("pageshow", function(event) {
+                    var historyTraversal = event.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2);
+                    if (historyTraversal) { // Handle page restore.
+                      setTimeout(() => {
+                        window.location.reload();
+                      }, 1500)
+                    }
+                  });
+
                 setTimeout(()=>{
                     $(".coffee_desc.onload").addClass('mystyle_1');
                 },3000)
